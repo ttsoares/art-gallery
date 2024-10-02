@@ -1,13 +1,16 @@
 import { IonContent } from "@ionic/react";
 import TextFour from "./pieces/TextFour";
+import { FC } from "react";
 
-type FooterBgcolor = "black" | "orange";
+type FooterBgcolor = {
+  bgcolor: "black" | "orange";
+};
 
-const Footer = ({ bgcolor }: { bgcolor: FooterBgcolor }) => {
+const Footer: FC<FooterBgcolor> = ({ bgcolor }) => {
   return (
     <IonContent>
       <div
-        className={`w-full mt-20 md:mt-0 md:h-56  flex justify-center items-center ${
+        className={`w-full md:h-56  flex justify-center items-center ${
           bgcolor === "black" ? "bg-black" : "bg-p_orange"
         }`}
       >

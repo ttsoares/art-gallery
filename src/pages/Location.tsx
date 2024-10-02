@@ -6,12 +6,19 @@ import Footer from "../components/Footer";
 const Location = () => {
   return (
     <IonPage>
-      <div className="relative w-full ">
-        <div className="top-0 left-0 h-[800px] w-full bg-[url('/assets/images/desktop/image-map@2x.png')] bg-cover bg-center"></div>
-        <div className="absolute top-0 left-0 md:left-[130px]">
-          <BtnBck />
+      <IonContent>
+        <div
+          className="relative top-0 left-0 h-[550px] md:h-[768px] lg:h-[800px] w-full
+        bg-[url('/assets/images/mobile/image-map@2x.png')]
+        md:bg-[url('/assets/images/tablet/image-map@2x.png')]
+        lg:bg-[url('/assets/images/desktop/image-map@2x.png')]
+        bg-cover bg-center"
+        >
+          <div className="absolute top-0 left-0 md:left-[130px]">
+            <BtnBck />
+          </div>
         </div>
-        <div className="w-full h-fit md:h-[548px] bg-black flex justify-center items-center">
+        <div className="w-full md:h-[548px] bg-black flex justify-center items-center">
           <div className="w-full md:w-[80%] md:h-72 flex flex-col md:flex-row p-4 md:p-0">
             <div className="w-full md:w-1/2 h-full ">
               <h1 className="text-white font-bsd font-extrabold text-[60px] flex flex-row md:flex-col">
@@ -20,7 +27,7 @@ const Location = () => {
               </h1>
             </div>
             <div className="w-full md:w-1/2 h-full p-4 md:p-0 ">
-              <div className="w-full md:w-[70%] flex flex-col space-y-3">
+              <div className="w-full md:w-[70%] flex flex-col space-y-3 text-white">
                 <h3 className="text-p_orange font-bold text-3xl">
                   99 KING STREET
                 </h3>
@@ -38,8 +45,8 @@ const Location = () => {
             </div>
           </div>
         </div>
-      </div>
-      <Footer bgcolor="orange" />
+        <Footer bgcolor="orange" />
+      </IonContent>
     </IonPage>
   );
 };
