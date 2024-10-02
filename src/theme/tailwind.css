@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "bsd";
+  src: local("BigShouldersDisplay"),
+    url("/assets/fonts/BigShouldersDisplay-VariableFont_wght.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "outf";
+  src: local("Outfit"),
+    url("/assets/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
