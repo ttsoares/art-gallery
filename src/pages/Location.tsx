@@ -9,9 +9,9 @@ const Location = () => {
       <IonContent>
         <div
           className="relative top-0 left-0 h-[550px] md:h-[768px] lg:h-[800px] w-full
-        bg-[url('/assets/images/mobile/image-map@2x.png')]
-        md:bg-[url('/assets/images/tablet/image-map@2x.png')]
-        lg:bg-[url('/assets/images/desktop/image-map@2x.png')]
+        bg-[url('/images/mobile/image-map@2x.png')]
+        md:bg-[url('/images/tablet/image-map@2x.png')]
+        lg:bg-[url('/images/desktop/image-map@2x.png')]
         bg-cover bg-center"
         >
           <div className="absolute top-0 left-0 md:left-[130px]">

@@ -4,17 +4,49 @@
 
 @font-face {
   font-family: "bsd";
-  src: local("BigShouldersDisplay"),
-    url("/assets/fonts/BigShouldersDisplay-VariableFont_wght.ttf")
-      format("truetype");
-  font-weight: normal;
+  src: url("/fonts/BigShouldersDisplay-Light.ttf") format("truetype");
+  font-weight: 200;
   font-style: normal;
 }
-
+@font-face {
+  font-family: "bsd";
+  src: url("/fonts/BigShouldersDisplay-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "bsd";
+  src: url("/fonts/BigShouldersDisplay-Regular.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "bsd";
+  src: url("/fonts/BigShouldersDisplay-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
 @font-face {
   font-family: "outf";
-  src: local("Outfit"),
-    url("/assets/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
+  src: url("/fonts/Outfit-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "outf";
+  src: url("/fonts/Outfit-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "outf";
+  src: url("/fonts/Outfit-Regular.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "outf";
+  src: url("/fonts/Outfit-Bold.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal;
 }

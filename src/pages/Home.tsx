@@ -1,25 +1,20 @@
-import { IonContent, IonItem, IonPage } from "@ionic/react";
-
 import Desktop from "../components/Desktop";
 import Tablet from "../components/Tablet";
 import Mobile from "../components/Mobile";
-import Footer from "../components/Footer";
+import useWindowSize from "../hooks/useWindowSize";
 
 const Home: React.FC = () => {
+  const size = useWindowSize();
+
+  // Another possible way to do it
+  // const wWidth = window.matchMedia("(max-width: 768px)").matches;
+
   return (
-    <IonPage>
-      <IonContent fullscreen>
-        <div className="hidden lg:block">
-          <Desktop />
-        </div>
-        <div className="hidden md:block lg:hidden">
-          <Tablet />
-        </div>
-        <div className="md:hidden">
-          <Mobile />
-        </div>
-      </IonContent>
-    </IonPage>
+    <>
+      {size.width! >= 768 && <Desktop />}
+      {size.width! <= 768 && size.width! >= 376 && <Tablet />}
+      {size.width! <= 375 && <Mobile />}
+    </>
   );
 };
 

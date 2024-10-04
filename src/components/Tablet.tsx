@@ -7,11 +7,11 @@ import Footer from "./Footer";
 
 const Tablet = () => {
   return (
-    <IonPage className="ion-no-padding">
+    <IonPage>
       <IonContent>
         {/* Hero */}
         <div className="w-full bg-slate-200 relative flex ">
-          <div className="w-[437px] h-[700px] top-0 left-0 bg-[url('/assets/images/tablet/image-hero.jpg')] bg-cover bg-center "></div>
+          <div className="w-[437px] h-[700px] top-0 left-0 bg-[url('/images/tablet/image-hero.jpg')] bg-cover bg-center "></div>
 
           <div className="w-[400px] h-[380px] absolute top-[20%] right-0  flex flex-col">
             <h1 className="text-[70px] text-black font-bsd font-extrabold tracking-wide mb-6">
@@ -30,12 +30,12 @@ const Tablet = () => {
               </h1>
               <TextTwo />
             </div>
-            <div className="w-[57%] bg-[url('/assets/images/tablet/image-grid-1.jpg')]"></div>
+            <div className="w-[57%] bg-[url('/images/tablet/image-grid-1.jpg')]"></div>
           </div>
           <div className="flex w-full mt-20 ">
-            <div className="w-[398px] h-[720px] bg-cover bg-center bg-[url('/assets/images/tablet/image-grid-2.jpg')]"></div>
+            <div className="w-[398px] h-[720px] bg-cover bg-center bg-[url('/images/tablet/image-grid-2.jpg')]"></div>
             <div className="flex flex-col place-content-center">
-              <div className="ml-8 w-[280px] h-[300px] bg-[url('/assets/images/tablet/image-grid-3.jpg')] bg-cover bg-center"></div>
+              <div className="ml-8 w-[280px] h-[300px] bg-[url('/images/tablet/image-grid-3.jpg')] bg-cover bg-center"></div>
               <div className="ml-8 w-[280px] h-[385px] bg-black text-white flex flex-col justify-center items-center mt-8">
                 <h1 className="text-[60px] font-bsd font-extrabold w-[70%]">
                   <span>COME & BE</span> <span>INSPIRED</span>
