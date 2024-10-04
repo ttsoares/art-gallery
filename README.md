@@ -16,6 +16,8 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 ## Overview
 
 ### The challenge
@@ -24,6 +26,7 @@ Users should be able to:
 
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
+- **Bonus**: Use [Leaflet JS](https://leafletjs.com/) to create an interactive location map with custom location pin
 
 ### Screenshot
 
@@ -38,49 +41,46 @@ Users should be able to:
 
 ### Built with
 
-- Ionic utility functions
-- Components decompositon
-- TailwindCSS media queries
-- Desktop-first workflow
-- [React]() - JS library
-- [Ionic]() - UI framework
-- [TailwindCSS](https://styled-components.com/) - For styles
+- Ionic UI utilities to frame the interface
+- TailwindCSS to format the specific detais
+- Split large, medium and small sizes is separate files
+- [React](https://reactjs.org/) - JS library
+- [TailwindCSS](https://tailwindcss.com/) - CSS utility classes
+- [Ionic](https://ionicframework.com/) - Render JS code to native APPs to Web, IOS and Android
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+More learning about the context of React, Tailwind and Ionic.
+How to render React components using the window object width propertie. That is a better approach than media qqueryes.
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+if (typeof window !== "undefined") {
+  // Handler to call on window resize
+  function handleResize() {
+    // Set window width/height to state
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  }
+}
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Ionic framework do offer much help to build UIs and style them to Web, IOs and Android, but when a desing must be followed one
+will need to make use of Tailwind (or plain CSS) as Ionic format can get in the way.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Use media queries with react hooks](https://www.youtube.com/watch?v=_Dm7jkJ75Zk) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Thomas TS](https://buildesign.vercel.app/)
+- Frontend Mentor - [@ttsoares](https://www.frontendmentor.io/profile/ttsoares)
+- Linkedin - [thomas-soares-6791781b/](https://www.linkedin.com/in/thomas-soares-6791781b/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+[That thread at StackOferflow was very usefull](https://stackoverflow.com/questions/67266495/how-can-i-hide-a-component-in-react-depending-on-the-screen-size)
